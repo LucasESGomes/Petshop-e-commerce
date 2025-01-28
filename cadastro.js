@@ -15,7 +15,8 @@ function registro() {
       sobrenome: sobrenome,
       rg: rg,
       email: email,
-      senha: senha
+      senha: senha,
+      usuario: "usuario"
   };
 
   // Fazer o POST para o JSON Server

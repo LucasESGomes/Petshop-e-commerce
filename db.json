@@ -6,7 +6,17 @@
       "sobrenome": "Porfirio",
       "rg": "12345",
       "email": "leo@gmail.com",
-      "senha": "123"
+      "senha": "123",
+      "usuario": "usuario"
+    },
+    {
+      "id": "6ffc",
+      "nome": "Carlinhos",
+      "sobrenome": "Ferreira",
+      "rg": "2345678",
+      "email": "carlos@gmail.com",
+      "senha": "321",
+      "usuario": "admin"
     }
   ]
 }

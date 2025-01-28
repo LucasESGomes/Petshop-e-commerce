@@ -20,17 +20,16 @@ document.querySelector("form").addEventListener("submit", (e) => {
         (usuario) => usuario.email === email && usuario.senha === senha
       );
 
-      if (usuarioEncontrado) {
-        if (usuarioEncontrado.email === "carlinhosadm@gmail.com") {
-          //Conta para administradores (terá um acesso diferente para ADM)
-          alert(`Bem-vindo ${usuarioEncontrado.nome}!`);
-          window.location.href = "adm.html";
-        } else {
+      if (usuarioEncontrado.usuario === "usuario") {
           alert(`Bem-vindo, ${usuarioEncontrado.nome}!`);
           // Opcional: Redirecionar para uma página de dashboard
           window.location.href = "inicio.html";
-        }
-      } else {
+
+      } if(usuarioEncontrado.usuario === "admin") {
+        alert(`Bem-vindo, ${usuarioEncontrado.nome}!`);
+        window.location.href = "adm.html";
+      }
+        else {
         alert("E-mail ou senha incorretos.");
       }
     })

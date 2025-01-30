@@ -1,13 +1,12 @@
 {
   "registro": [
     {
-      "id": "e671",
       "nome": "Leonardo",
       "sobrenome": "Porfirio",
-      "rg": "12345",
+      "rg": "4444555",
       "email": "leo@gmail.com",
-      "senha": "123",
-      "usuario": "usuario"
+      "usuario": "usuario",
+      "id": "e671"
     },
     {
       "id": "6ffc",
@@ -17,6 +16,15 @@
       "email": "carlos@gmail.com",
       "senha": "321",
       "usuario": "admin"
+    },
+    {
+      "id": "bd53",
+      "nome": "joao",
+      "sobrenome": "victor",
+      "rg": "222222",
+      "email": "joao@gmail.com",
+      "senha": "222",
+      "usuario": "usuario"
     }
   ]
 }

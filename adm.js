@@ -59,5 +59,29 @@ async function deletarUsuario(id) {
         }
     }
 }
-
 fetchUsuarios();
+
+
+//Função de buscar os cadastrados pelo RG
+// Função para buscar usuários por RG
+async function botaoRg() {
+    const buscaRg = document.getElementById("buscaRg").value.trim();
+    
+    if (buscaRg) {
+        try {
+            const response = await fetch("http://localhost:3000/registro");
+            const data = await response.json();
+            
+            // Filtra os usuários pelo RG
+            const filteredUsers = data.filter(user => user.rg.includes(buscaRg));
+            
+            // Renderiza os resultados filtrados
+            renderUsuarios(filteredUsers);
+        } catch (error) {
+            console.error("Erro ao buscar usuários:", error);
+        }
+    } else {
+        // Se o campo estiver vazio, carrega todos os usuários
+        fetchUsuarios();
+    }
+}
